@@ -153,9 +153,6 @@ func Download(client *http.Client, ms []Mix) {
 }
 
 func main() {
-	fmt.Println(Dist)
-	fmt.Println(Source)
-
 	mixes, err := GetMixes(Source)
 	if err != nil {
 		log.Fatal(err)
